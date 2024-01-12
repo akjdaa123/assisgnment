@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333; 
+}
+
+#wallet-container {
+    width: 80%;
+    max-width: 700px;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#wallet-container:hover {
+    transform: translateY(-10px);
+}
+
+#wallet-container h1 {
+    color: #005a77; 
+    margin-bottom: 30px; 
+}
+
+#public-key-container,
+#qr-code-container,
+#price-container {
+    margin-top: 30px;
+}
+
+button {
+    background-color: #005a77; 
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #003d54;
+}
+
+#public-key-container strong,
+#price-container strong {
+    color: #005a77; 
+}
+
+#qr-code-container canvas {
+    margin: auto; /* Center the canvas element */
+    display: block;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

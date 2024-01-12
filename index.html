@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Custom Wallet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+</head>
+<body>
+    <div id="wallet-container">
+        <h1>My Custom Wallet</h1>
+        <div id="public-key-container">
+            <p><strong>Public Key:</strong> <span id="public-key"></span></p>
+            <p><strong>Address:</strong> <span id="wallet-address"></span></p>
+        </div>
+        <div id="qr-code-container">
+            <canvas id="address-qr-code"></canvas>
+        </div>
+        <div id="price-container">
+            <button id="fetch-price">Get Current Bitcoin Price</button>
+            <p><strong>Current Price:</strong> <span id="crypto-price"></span></p>
+        </div>
+    </div>
+    <script src="wallet.js"></script>
+</body>
+</html>
